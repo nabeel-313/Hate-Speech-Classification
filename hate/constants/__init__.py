@@ -5,10 +5,11 @@ from datetime import datetime
 
 
 # Common constants
-TIMESTAMP: str = datetime.now().strftime("%m_%d_%Y_%H_%M_%S")
+TIMESTAMP: str = datetime.now().strftime("%m_%d_%Y") #remove the HH:MM:SS format) it causing the problem, creating many folders on each run
 ARTIFACTS_DIR = os.path.join("artifacts", TIMESTAMP)
-BUCKET_NAME = 'hate-speech'
-ZIP_FILE_NAME = 'dataset.zip'
+#BUCKET_NAME = 'hate-speech' #replace with url
+BUCKET_NAME = 'https://www.kaggle.com/datasets/mrmorj/hate-speech-and-offensive-language-dataset/download?datasetVersionNumber=1'
+ZIP_FILE_NAME = 'archive.zip'
 LABEL = 'label'
 TWEET = 'tweet'
 MODEL_NAME = 'model.h5'
