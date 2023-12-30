@@ -19,7 +19,7 @@ APP_PORT = 8080
 # Data ingestion constants
 DATA_INGESTION_ARTIFACTS_DIR = "DataIngestionArtifacts"
 DATA_INGESTION_IMBALANCE_DATA_DIR = "imbalanced_data.csv"
-DATA_INGESTION_RAW_DATA_DIR = "raw_data.csv"
+DATA_INGESTION_RAW_DATA_DIR = "labeled_data.csv"
 
 # Data transformation constants 
 DATA_TRANSFORMATION_ARTIFACTS_DIR = 'DataTransformationArtifacts'
